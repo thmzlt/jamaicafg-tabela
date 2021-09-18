@@ -1,0 +1,35 @@
+{
+  "schema": "v1",
+  "date": "2021-09-15",
+  "round": 37,
+  "team_1_color": "yellow",
+  "team_1_captain": "ricardo",
+  "team_1_goals": {
+    "maurilio": 0,
+    "jesus": 0,
+    "ricardo": 0,
+    "isaac": 1,
+    "thomaz": 3,
+    "alemao": 0,
+    "delapenha": 0,
+    "dududias": 1,
+    "boca": 0,
+    "lfernando": 0,
+    "gaucho": 0
+  },
+  "team_2_color": "black",
+  "team_2_captain": "pizzi",
+  "team_2_goals": {
+    "jeferson": 0,
+    "cabelo": 0,
+    "miguel": 0,
+    "gui": 0,
+    "teta": 0,
+    "santini": 0,
+    "fernandopizzi": 0,
+    "kimmel": 0,
+    "flavio": 0,
+    "lukinhas": 0,
+    "pizzi": 1
+  }
+}
