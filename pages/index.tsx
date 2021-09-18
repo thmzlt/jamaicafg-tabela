@@ -20,7 +20,7 @@ const Home: NextPage = () => {
 
       const [table] = db.exec(`
         SELECT 
-          players.name,
+          players.name as name,
           count(caps.name) as caps,
           sum(rounds.points) as points,
           round(sum(rounds.points) / cast(count(caps.name) as real) / 3 * 100, 1) as efficiency,
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
         GROUP BY
           players.name
         ORDER BY
-          points DESC, goals DESC
+          points DESC, diff DESC, team_goals_scored DESC, goals_scored DESC, name ASC
       `)
       setExecResults(table)
       setError(null)
