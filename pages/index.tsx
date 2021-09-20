@@ -1,10 +1,10 @@
-import styles from "../styles/Home.module.css";
+import _styles from "../styles/Home.module.css";
 import type { NextPage } from "next"
 import { useState, useEffect } from "react";
-import initSql, { Database, QueryExecResult } from "sql.js";
+import initSql from "sql.js";
 
 const Home: NextPage = () => {
-  const [error, setError] = useState<any>();
+  const [_error, setError] = useState<any>();
   const [execResults, setExecResults] = useState<any>({"columns": [], "values": []});
 
   useEffect(() => {
@@ -15,8 +15,6 @@ const Home: NextPage = () => {
 
     Promise.all([sqlPromise, dbBlobPromise]).then(([sql, buffer]) => {
       const db = new sql.Database(new Uint8Array(buffer));
-      const players = db.exec("SELECT DISTINCT name FROM caps");
-      const rounds = db.exec("SELECT * FROM rounds");
 
       const [table] = db.exec(`
         SELECT 
