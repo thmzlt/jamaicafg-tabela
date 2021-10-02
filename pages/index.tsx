@@ -1,7 +1,8 @@
-import _styles from "../styles/Home.module.css";
 import type { NextPage } from "next"
 import { useState, useEffect } from "react";
 import initSql from "sql.js";
+import * as icons from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Home: NextPage = () => {
   const [_error, setError] = useState<any>();
@@ -21,13 +22,13 @@ const Home: NextPage = () => {
           players.name as name,
           count(caps.name) as caps,
           sum(rounds.points) as points,
+          sum(caps.goals) as goals_scored,
           round(sum(rounds.points) / cast(count(caps.name) as real) / 3 * 100, 1) as efficiency,
           sum(rounds.goals_scored) as team_goals_scored,
           sum(rounds.goals_allowed) as team_goals_allowed,
           sum(rounds.goals_scored) - sum(rounds.goals_allowed) as diff,
           round(sum(rounds.goals_scored) / cast(count(caps.name) as real), 1) as average_scored,
-          round(sum(rounds.goals_allowed) / cast(count(caps.name) as real), 1) as average_allowed,
-          sum(caps.goals) as goals_scored
+          round(sum(rounds.goals_allowed) / cast(count(caps.name) as real), 1) as average_allowed
         FROM
           players, caps, rounds
         WHERE
@@ -48,40 +49,57 @@ const Home: NextPage = () => {
     return <p>loading...</p>
   }
 
-  console.log(execResults)
+  const entries = []
 
-  const tableHeader = []
+  for (let i = 0; i < execResults.values.length; i++) {
+    const record = execResults.values[i]
+    const id = record[0] as string;
+    console.log(record)
 
-  for (const column of execResults.columns) {
-    tableHeader.push(
-      <th>{column}</th>
-    )
-  }
-
-  const tableRows = []
-
-  for (const record of execResults.values) {
-    const row = []
-
-    for (let i = 0; i < execResults.columns.length; i++) {
-      row.push(
-        <td>{record[i]}</td>
-      )
-    }
-    tableRows.push(
-      <tr key={record.name}>
-        {row}
-      </tr>
+    entries.push(
+      <li key={record}>
+        <div className="top">
+          <span className="ranking">{i+1}</span>
+          <span className="name">{id}</span>
+          <div className="points">{record[2]}
+            <span className="tag">pt</span>
+          </div>
+        </div>
+        <div className="stats">
+          <div className="">
+            <FontAwesomeIcon icon={icons.faTshirt}></FontAwesomeIcon>
+            {record[1].toFixed(0)} 
+          </div>
+          <div className="">
+            <FontAwesomeIcon icon={icons.faBalanceScaleRight}></FontAwesomeIcon>
+            {(record[7] < 0 ? "" : "+") + record[7].toFixed(0)}
+          </div>
+          <div className="">
+            <FontAwesomeIcon icon={icons.faFutbol}></FontAwesomeIcon>
+            {record[3].toFixed(0)}
+          </div>
+          <div className="">
+            <FontAwesomeIcon icon={icons.faPlusCircle}></FontAwesomeIcon>
+            {record[8].toFixed(1)}
+          </div>
+          <div className="">
+            <FontAwesomeIcon icon={icons.faMinusCircle}></FontAwesomeIcon>
+            {record[9].toFixed(1)}
+          </div>
+        </div>
+      </li>
     )
   }
 
   return( 
-    <div>
-      <h1>Jamaica FG</h1>
-      <table>
-        <thead><tr>{tableHeader}</tr></thead>
-        <tbody>{tableRows}</tbody>
-      </table>
+    <div className="container">
+      <div className="header">
+        <img src="/escudo.jpeg"></img>
+        <h1>Jamaica FG 2021</h1>
+      </div>
+      <div className="content">
+        <ul>{entries}</ul>
+      </div>
     </div>
   );
 }

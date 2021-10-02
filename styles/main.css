@@ -1,0 +1,132 @@
+.container {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  max-width: 32em;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.header > img {
+  padding-right: 0.5em;
+}
+
+.header img {
+  width: 4em;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content ul li {
+  background-color: #f6f6f6;
+  margin: 0.5em;
+}
+
+.content > ul > li > .top {
+  background-color: #ccc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.content > ul > li > .stats {
+  padding: 0.5em;
+}
+
+.content ul li .ranking {
+  font-size: 2em;
+  padding-right: 0.5em;
+}
+
+.content ul li .name {
+  font-size: 2em;
+  padding-right: 0.5em;
+  flex-grow: 1;
+}
+
+.content ul li .data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.content ul li .points {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.content ul li .points .tag {
+  font-size: 0.5em;
+  opacity: 0.5;
+}
+
+.content ul li .stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  opacity: 0.75;
+}
+
+.content ul li .stats > div {
+  text-align: right;
+  width: 4em;
+}
+
+.content ul li .stats > div svg {
+  margin-right: 0.25em;
+}
+
+.splash > img {
+  padding: 1em;
+  width: 4em;
+}
+
+/*
+#view {
+  margin: auto;
+  width: 8em;
+}
+
+#banner {
+  display: flex;
+  flex-direction: row;
+}
+
+#banner img {
+  height: 8em;
+}
+
+table#main {
+  border-collapse: collapse;
+}
+
+table#main > thead {
+  border-bottom: 2px solid #eee;
+  text-align: left;
+}
+
+table#main > thead > tr > th {
+  text-align: left;
+}
+
+table#main > tbody {
+  border-top: 2px solid #000;
+}
+
+table#main > table > td {
+  border: 4px solid #ddd;
+  background-color: red;
+}
+*/
