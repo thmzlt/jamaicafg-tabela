@@ -100,6 +100,23 @@ const Home: NextPage = () => {
       <div className="content">
         <ul>{entries}</ul>
       </div>
+      <div className="footer">
+        <div className="">
+          <FontAwesomeIcon icon={icons.faTshirt}></FontAwesomeIcon> Jogos
+        </div>
+        <div className="">
+          <FontAwesomeIcon icon={icons.faBalanceScaleRight}></FontAwesomeIcon> Saldo de gols
+        </div>
+        <div className="">
+          <FontAwesomeIcon icon={icons.faFutbol}></FontAwesomeIcon> Gols marcados
+        </div>
+        <div className="">
+          <FontAwesomeIcon icon={icons.faPlusCircle}></FontAwesomeIcon> Média de gols pró
+        </div>
+        <div className="">
+          <FontAwesomeIcon icon={icons.faMinusCircle}></FontAwesomeIcon> Média de gols contra
+        </div>
+      </div>
     </div>
   );
 }
