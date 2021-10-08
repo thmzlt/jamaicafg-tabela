@@ -1,0 +1,35 @@
+{
+  "schema": "v1",
+  "date": "2021-10-06",
+  "round": 40,
+  "team_1_color": "white",
+  "team_1_captain": "ricardo",
+  "team_1_goals": {
+    "jeferson": 0,
+    "ricardo": 0,
+    "fralda": 2,
+    "alemao": 0,
+    "lukinhas": 0,
+    "miguel": 0,
+    "boca": 1,
+    "paulista": 5,
+    "thomaz": 1,
+    "gilson": 0,
+    "gaucho": 1
+  },
+  "team_2_color": "black",
+  "team_2_captain": "flavio",
+  "team_2_goals": {
+    "maurilio": 0,
+    "gui": 0,
+    "teta": 0,
+    "isaac": 0,
+    "marinho": 0,
+    "pizzi": 1,
+    "cabelo": 0,
+    "jesus": 0,
+    "flavio": 0,
+    "lfernando": 0,
+    "santini": 0
+  }
+}
