@@ -1,0 +1,36 @@
+{
+  "schema": "v1",
+  "date": "2021-10-13",
+  "round": 41,
+  "team_1_color": "yellow",
+  "team_1_captain": "ricardo",
+  "team_1_goals": {
+    "jeferson": 0,
+    "ricardo": 0,
+    "lucaslivre": 0,
+    "vitinho": 0,
+    "fralda": 0,
+    "teta": 0,
+    "isaac": 0,
+    "ronaldinho": 0,
+    "santini": 1,
+    "paulista": 3,
+    "thomaz": 3
+  },
+  "team_2_color": "black",
+  "team_2_captain": "flavio",
+  "team_2_goals": {
+    "maurilio": 0,
+    "wp": 1,
+    "kimmel": 0,
+    "flavio": 1,
+    "miguel": 0,
+    "marinho": 0,
+    "cabelo": 0,
+    "delapenha": 0,
+    "gaucho": 3,
+    "pizzi": 1,
+    "gui": 0,
+    "_golcontra": 1
+  }
+}
