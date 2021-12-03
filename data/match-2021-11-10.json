@@ -1,0 +1,33 @@
+{
+  "schema": "v1",
+  "date": "2021-11-10",
+  "round": 45,
+  "team_1_captain": "vitinho",
+  "team_1_goals": {
+    "pedro": 0,
+    "kimmel": 0,
+    "jesus": 0,
+    "gilson": 1,
+    "viniwp": 0,
+    "marinho": 0,
+    "cabelo": 0,
+    "vitinho": 1,
+    "santini": 0,
+    "fernandopizzi": 3,
+    "halley": 0
+  },
+  "team_2_captain": "ricardo",
+  "team_2_goals": {
+    "vini": 0,
+    "lippe": 0,
+    "lukinhas": 0,
+    "davi": 0,
+    "flavio": 0,
+    "alemao": 0,
+    "ph": 2,
+    "roben": 2,
+    "gui": 2,
+    "johnny": 0,
+    "ronaldinho": 1
+  }
+}

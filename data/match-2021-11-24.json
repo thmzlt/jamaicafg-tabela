@@ -1,0 +1,33 @@
+{
+  "schema": "v1",
+  "date": "2021-11-24",
+  "round": 47,
+  "team_1_captain": "paulista",
+  "team_1_goals": {
+    "jeferson": 0,
+    "ricardo": 0,
+    "marinho": 0,
+    "cabelo": 1,
+    "dududias": 0,
+    "fralda": 0,
+    "jesus": 0,
+    "pizzi": 3,
+    "alemao": 0,
+    "santini": 2,
+    "paulista": 0
+  },
+  "team_2_captain": "gui",
+  "team_2_goals": {
+    "vini": 0,
+    "gaucho": 0,
+    "miguel": 0,
+    "teta": 0,
+    "flavio": 0,
+    "lukinha": 0,
+    "boca": 0,
+    "thomaz": 1,
+    "davi": 0,
+    "kimmel": 0,
+    "gui": 0
+  }
+}

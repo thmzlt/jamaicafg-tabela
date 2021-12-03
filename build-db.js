@@ -18,7 +18,7 @@ db.serialize(function () {
       round int NOT NULL,
       name string NOT NULL,
       captain string NOT NULL,
-      color string NOT NULL,
+      color string,
       goals int NOT NULL,
 
       PRIMARY KEY (date, round, name, captain, color, goals)
