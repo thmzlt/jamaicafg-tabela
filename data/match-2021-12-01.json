@@ -1,0 +1,32 @@
+{
+  "schema": "v1",
+  "date": "2021-12-01",
+  "round": 48,
+  "team_1_captain": "paulista",
+  "team_1_goals": {
+    "fabinhogk": 0,
+    "ricardo": 0,
+    "flavio": 0,
+    "kimmel": 0,
+    "wp": 0,
+    "thomaz": 1,
+    "miguel": 0,
+    "lauro": 0,
+    "marinho": 0,
+    "boticario": 0,
+    "paulista": 0
+  },
+  "team_2_captain": "gaucho",
+  "team_2_goals": {
+    "jeferson": 0,
+    "gilson": 0,
+    "gaucho": 3,
+    "jesus": 0,
+    "teta": 1,
+    "roben": 0,
+    "davi": 1,
+    "pizzi": 0,
+    "cabelo": 0,
+    "lfernando": 0
+  }
+}
