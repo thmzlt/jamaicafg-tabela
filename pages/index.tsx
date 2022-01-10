@@ -105,7 +105,7 @@ const Home: NextPage = () => {
     <div className="container">
       <div className="header">
         <img src="/escudo.jpeg"></img>
-        <h1>Jamaica FG 2021</h1>
+        <h1>Jamaica FG 2022</h1>
       </div>
       <div className="content">
         <ul>{entries}</ul>
