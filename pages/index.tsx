@@ -1,18 +1,26 @@
-import type { NextPage } from "next"
+import type { NextPage } from "next";
 import { useState, useEffect } from "react";
 import initSql from "sql.js";
-import * as icons from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import * as icons from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Home: NextPage = () => {
   const [_error, setError] = useState<any>();
-  const [execResults, setExecResults] = useState<any>({"columns": [], "values": []});
+  const [execResults, setExecResults] = useState<any>({
+    columns: [],
+    values: [],
+  });
 
   useEffect(() => {
-    const config = {locateFile: (file: String) => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.1/${file}`}
+    const config = {
+      locateFile: (file: String) =>
+        `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.1/${file}`,
+    };
 
-    const sqlPromise = initSql(config)
-    const dbBlobPromise = fetch("/db.sqlite3").then(data => data.arrayBuffer())
+    const sqlPromise = initSql(config);
+    const dbBlobPromise = fetch("/db.sqlite3").then((data) =>
+      data.arrayBuffer()
+    );
 
     Promise.all([sqlPromise, dbBlobPromise]).then(([sql, buffer]) => {
       const db = new sql.Database(new Uint8Array(buffer));
@@ -34,41 +42,43 @@ const Home: NextPage = () => {
         WHERE
           players.name = caps.name AND 
           caps.round = rounds.round AND
-          caps.captain = rounds.captain
+          caps.captain = rounds.captain AND
+          rounds.date >= '2022-01-01'
         GROUP BY
           players.name
         ORDER BY
           points DESC, diff DESC, team_goals_scored DESC, goals_scored DESC, name ASC
-      `)
-      setExecResults(table)
-      setError(null)
+      `);
+      setExecResults(table);
+      setError(null);
     });
   }, []);
 
   if (execResults == null) {
-    return <p>loading...</p>
+    return <p>loading...</p>;
   }
 
-  const entries = []
+  const entries = [];
 
   for (let i = 0; i < execResults.values.length; i++) {
-    const record = execResults.values[i]
+    const record = execResults.values[i];
     const id = record[0] as string;
-    console.log(record)
+    console.log(record);
 
     entries.push(
       <li key={record}>
         <div className="top">
-          <span className="ranking">{i+1}</span>
+          <span className="ranking">{i + 1}</span>
           <span className="name">{id}</span>
-          <div className="points">{record[2]}
+          <div className="points">
+            {record[2]}
             <span className="tag">pt</span>
           </div>
         </div>
         <div className="stats">
           <div className="">
             <FontAwesomeIcon icon={icons.faTshirt}></FontAwesomeIcon>
-            {record[1].toFixed(0)} 
+            {record[1].toFixed(0)}
           </div>
           <div className="">
             <FontAwesomeIcon icon={icons.faBalanceScaleRight}></FontAwesomeIcon>
@@ -88,10 +98,10 @@ const Home: NextPage = () => {
           </div>
         </div>
       </li>
-    )
+    );
   }
 
-  return( 
+  return (
     <div className="container">
       <div className="header">
         <img src="/escudo.jpeg"></img>
@@ -105,20 +115,24 @@ const Home: NextPage = () => {
           <FontAwesomeIcon icon={icons.faTshirt}></FontAwesomeIcon> Jogos
         </div>
         <div className="">
-          <FontAwesomeIcon icon={icons.faBalanceScaleRight}></FontAwesomeIcon> Saldo de gols
+          <FontAwesomeIcon icon={icons.faBalanceScaleRight}></FontAwesomeIcon>{" "}
+          Saldo de gols
         </div>
         <div className="">
-          <FontAwesomeIcon icon={icons.faFutbol}></FontAwesomeIcon> Gols marcados
+          <FontAwesomeIcon icon={icons.faFutbol}></FontAwesomeIcon> Gols
+          marcados
         </div>
         <div className="">
-          <FontAwesomeIcon icon={icons.faPlusCircle}></FontAwesomeIcon> Média de gols pró
+          <FontAwesomeIcon icon={icons.faPlusCircle}></FontAwesomeIcon> Média de
+          gols pró
         </div>
         <div className="">
-          <FontAwesomeIcon icon={icons.faMinusCircle}></FontAwesomeIcon> Média de gols contra
+          <FontAwesomeIcon icon={icons.faMinusCircle}></FontAwesomeIcon> Média
+          de gols contra
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Home
+export default Home;
