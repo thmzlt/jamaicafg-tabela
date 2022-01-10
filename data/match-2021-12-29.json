@@ -1,0 +1,33 @@
+{
+  "schema": "v1",
+  "date": "2021-12-29",
+  "round": 52,
+  "team_1_captain": "miguel",
+  "team_1_goals": {
+    "fabinhogk": 0,
+    "teta": 2,
+    "isaac": 0,
+    "thomaz": 2,
+    "jesus": 0,
+    "dududias": 1,
+    "miguel": 0,
+    "ricardo": 0,
+    "kleber": 0,
+    "vitinho": 0,
+    "boticario": 0
+  },
+  "team_2_captain": "pizzi",
+  "team_2_goals": {
+    "andre": 0,
+    "cabelo": 0,
+    "robben": 1,
+    "davi": 0,
+    "lfernando": 0,
+    "fralda": 0,
+    "gilson": 1,
+    "guilherme": 0,
+    "diego": 0,
+    "totonho": 1,
+    "daniel": 0
+  }
+}

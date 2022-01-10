@@ -1,0 +1,33 @@
+{
+  "schema": "v1",
+  "date": "2021-12-15",
+  "round": 50,
+  "team_1_captain": "miguel",
+  "team_1_goals": {
+    "fabinhogk": 0,
+    "teta": 1,
+    "kleber": 0,
+    "wp": 0,
+    "vini": 1,
+    "isaac": 0,
+    "thomaz": 2,
+    "alemao": 0,
+    "jesus": 0,
+    "kimmel": 0,
+    "miguel": 0
+  },
+  "team_2_captain": "pizzi",
+  "team_2_goals": {
+    "marcos": 0,
+    "pizzi": 0,
+    "gui": 3,
+    "davi": 1,
+    "lfernando": 0,
+    "paulista": 1,
+    "gilson": 1,
+    "hiago": 0,
+    "dudusantini": 0,
+    "cabelo": 1,
+    "duduaguiar": 0
+  }
+}
