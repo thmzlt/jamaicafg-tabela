@@ -1,0 +1,33 @@
+{
+  "schema": "v1",
+  "date": "2022-01-12",
+  "round": 2,
+  "team_1_captain": "gaucho",
+  "team_1_goals": {
+    "vinigk": 0,
+    "lfernando": 0,
+    "jesus": 0,
+    "teta": 1,
+    "isaac": 0,
+    "hiago": 0,
+    "kimmel": 0,
+    "gaucho": 2,
+    "pizzi": 2,
+    "cabelo": 0,
+    "paulista": 1
+  },
+  "team_2_captain": "miguel",
+  "team_2_goals": {
+    "lentinha": 0,
+    "ricardo": 0,
+    "cinho": 0,
+    "alemao": 1,
+    "marinho": 0,
+    "lippe": 0,
+    "dodo": 0,
+    "kleber": 0,
+    "robben": 0,
+    "ph": 0,
+    "flavio": 0
+  }
+}
