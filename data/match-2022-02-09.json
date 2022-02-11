@@ -1,0 +1,33 @@
+{
+  "schema": "v1",
+  "date": "2022-02-09",
+  "round": 6,
+  "team_1_captain": "thomaz",
+  "team_1_goals": {
+    "fabinhogk": 0,
+    "flavio": 1,
+    "jesus": 0,
+    "cabelo": 0,
+    "isaac": 0,
+    "hiago": 0,
+    "teta": 1,
+    "paulista": 3,
+    "vitinho": 0,
+    "wp": 0,
+    "thomaz": 3
+  },
+  "team_2_captain": "lfernando",
+  "team_2_goals": {
+    "marcos": 0,
+    "marinho": 2,
+    "ricardo": 1,
+    "fralda": 2,
+    "robben": 2,
+    "miguel": 0,
+    "dududias": 0,
+    "pizzi": 0,
+    "dede": 2,
+    "kimmel": 0,
+    "lfernando": 0
+  }
+}
