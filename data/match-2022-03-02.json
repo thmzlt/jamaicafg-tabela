@@ -1,0 +1,31 @@
+{
+  "schema": "v1",
+  "date": "2022-03-02",
+  "round": 9,
+  "team_1_captain": "???",
+  "team_1_goals": {
+    "maycon": 0,
+    "ph": 1,
+    "jesus": 0,
+    "fernandopizzi": 0,
+    "gui": 0,
+    "isaac": 2,
+    "gilson": 0,
+    "paulista": 1,
+    "ademar": 0,
+    "wp": 1
+  },
+  "team_2_captain": "pizzi",
+  "team_2_goals": {
+    "jeferson": 0,
+    "hiago": 1,
+    "kimmel": 0,
+    "brunera": 4,
+    "cabelo": 0,
+    "flavio": 0,
+    "marinho": 0,
+    "miguel": 0,
+    "gaucho": 2,
+    "pizzi": 4
+  }
+}
