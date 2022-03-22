@@ -1,0 +1,33 @@
+{
+  "schema": "v1",
+  "date": "2022-03-16",
+  "round": 11,
+  "team_1_captain": "thomaz",
+  "team_1_goals": {
+    "luizinho": 0,
+    "vitinho": 0,
+    "jesus": 0,
+    "dududias": 0,
+    "gui": 1,
+    "isaac": 0,
+    "kleber": 1,
+    "ricardo": 1,
+    "paulista": 0,
+    "santini": 0,
+    "fralda": 0
+  },
+  "team_2_captain": "pizzi",
+  "team_2_goals": {
+    "jeferson": 0,
+    "lippe": 0,
+    "kimmel": 0,
+    "teta": 0,
+    "cabelo": 0,
+    "flavio": 1,
+    "lfernando": 1,
+    "marinho": 0,
+    "miguel": 0,
+    "gaucho": 1,
+    "pizzi": 5
+  }
+}
