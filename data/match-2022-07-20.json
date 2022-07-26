@@ -1,0 +1,32 @@
+{
+  "schema": "v1",
+  "date": "2022-07-20",
+  "round": 29,
+  "team_1_captain": "paulista",
+  "team_1_goals": {
+    "fabinhogk": 0,
+    "miguel": 0,
+    "ricardo": 1,
+    "jesus": 0,
+    "gaucho": 0,
+    "thomaz": 0,
+    "isaac": 0,
+    "kimmel": 2,
+    "gui": 0,
+    "santini": 0,
+    "paulista": 0
+  },
+  "team_2_captain": "marinho",
+  "team_2_goals": {
+    "jeferson": 0,
+    "pizzi": 0,
+    "teta": 1,
+    "lippe": 0,
+    "ronaldinho": 2,
+    "cabelo": 1,
+    "flavio": 0,
+    "hiago": 1,
+    "botica": 0,
+    "marinho": 1
+  }
+}
